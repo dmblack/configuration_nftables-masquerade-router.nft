@@ -1,0 +1,4 @@
+# Used as a general counter rule.
+chain counter-total {
+  counter
+}

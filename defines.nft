@@ -1,0 +1,2 @@
+# Wan Interface
+define interface_wan = eth1

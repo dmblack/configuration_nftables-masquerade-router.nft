@@ -1,0 +1,9 @@
+chain postrouting {
+  type nat hook postrouting priority 0
+
+  # count our traffic.
+  jump counter-total
+
+  # Setup our masquerade, if the source address is our LAN, and the out interface is wan.
+  ip saddr 192.168.1.0/24 oif $interface_wan masquerade
+}
